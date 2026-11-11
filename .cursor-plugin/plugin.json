@@ -1,0 +1,22 @@
+{
+  "name": "rizamo",
+  "displayName": "Rizamo",
+  "description": "Publish, schedule and analyze social posts on Instagram, Facebook, TikTok, YouTube and more.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rizamo",
+    "email": "hi@rizamo.com"
+  },
+  "homepage": "https://rizamo.com/agents/",
+  "repository": "https://github.com/rizamohq/rizamo-mcp",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "marketing",
+    "scheduling",
+    "analytics",
+    "instagram",
+    "tiktok"
+  ],
+  "logo": "assets/logo.svg"
+}
