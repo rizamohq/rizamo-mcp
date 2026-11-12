@@ -14,19 +14,24 @@ Remote server, streamable HTTP. Your agent signs in with OAuth: you approve it i
 
 ### Claude
 
-[Add to Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Rizamo&connectorUrl=https%3A%2F%2Fmcp.rizamo.com%2Fmcp), or:
+Rizamo is in Claude's connectors directory. [Add to Claude](https://claude.ai/directory/rizamo), or:
 
-1. In Claude, open Customize, then Connectors, and choose Add custom connector.
-2. Name it Rizamo and paste the server URL.
-3. Sign in to Rizamo and choose the profiles Claude can use.
-4. In any chat, turn it on from + then Connectors.
+1. In Claude, open Customize, then Connectors, search Rizamo and connect.
+2. Sign in to Rizamo and choose the profiles Claude can use.
+3. In any chat, turn it on from + then Connectors.
+
+Or add it as a custom connector: in Connectors, choose Add custom connector, name it Rizamo and paste the server URL.
 
 ### ChatGPT
 
-1. Open chatgpt.com/plugins, choose + and then Add custom MCP server.
-2. Name it Rizamo and paste the server URL.
-3. Pick OAuth, create the plugin and sign in to Rizamo.
-4. Install it from your plugins and type @Rizamo in a chat.
+Rizamo is in ChatGPT's plugins. [Add to ChatGPT](https://chatgpt.com/plugins/plugin_asdk_app_6af34eba7a2881919b6ff5f8abb657eb), or:
+
+1. Connect your social accounts in Rizamo first: the ChatGPT plugin uses them, and you add more in the web app.
+2. In ChatGPT, open Plugins, search Rizamo and connect.
+3. Sign in to Rizamo and choose the profiles ChatGPT can use.
+4. Type @Rizamo in a chat.
+
+Or add it as a custom MCP server, which can also send links to connect accounts: open chatgpt.com/plugins, choose + and then Add custom MCP server, paste the server URL and pick OAuth.
 
 ### Claude Code
 
