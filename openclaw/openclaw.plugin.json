@@ -1,0 +1,33 @@
+{
+  "id": "rizamo",
+  "name": "Rizamo",
+  "version": "1.0.0",
+  "description": "Publish and schedule posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages.",
+  "categories": [
+    "sales-marketing"
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "skills": [
+    "skills/rizamo"
+  ],
+  "recommendedPrompts": [
+    "What is scheduled on my social accounts this week?",
+    "How did my posts do this month compared with last month?",
+    "Show me the open comments and messages that need a reply."
+  ],
+  "mcpServers": {
+    "rizamo": {
+      "url": "https://mcp.rizamo.com/mcp",
+      "description": "Enable this plugin, then sign in to Rizamo under Settings, MCP.",
+      "auth": "oauth",
+      "transport": "streamable-http",
+      "oauth": {
+        "scope": "accounts:read accounts:write fields:read fields:write posts:read posts:write media:read media:write inbox:read inbox:write links:read links:write analytics:read automations:read automations:write events:read webhooks:read webhooks:write offline_access"
+      }
+    }
+  }
+}

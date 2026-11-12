@@ -3,10 +3,10 @@ name: rizamo
 description: Publish and schedule social media posts on Instagram, Facebook, TikTok, YouTube and Threads with Rizamo, see how they did, and answer comments and messages. Use when the user wants to post or schedule social content, check post or account analytics, or reply to their audience.
 metadata:
   openclaw:
-    requires:
-      env:
-        - RIZAMO_API_KEY
-    primaryEnv: RIZAMO_API_KEY
+    envVars:
+      - name: RIZAMO_API_KEY
+        required: false
+        description: Rizamo API key for the REST API, created in Rizamo under Developers. Not needed when the Rizamo MCP server is connected.
     homepage: https://docs.rizamo.com/connect-an-agent
 ---
 
@@ -14,7 +14,7 @@ metadata:
 
 Rizamo publishes to a team's social accounts, grouped in profiles (one per brand or client, each with its own accounts, queue and time zone). Two ways in:
 
-- **MCP (preferred when your client supports remote MCP servers):** `https://mcp.rizamo.com/mcp`, streamable HTTP. The user signs in with OAuth and chooses the profiles you can reach. Its tools follow the steps below by name (`list_accounts`, `create_media`, `validate_post`, `create_post`, `publish_post`, `get_post`, `get_analytics`, `list_threads`, `reply_to_thread`).
+- **MCP (preferred when your client supports remote MCP servers):** `https://mcp.rizamo.com/mcp`, streamable HTTP. The user signs in with OAuth and chooses the profiles you can reach. Its tools follow the steps below by name (`list_accounts`, `create_media`, `validate_post`, `create_post`, `publish_post`, `get_post`, `get_analytics`, `list_threads`, `reply_to_thread`). In OpenClaw, `openclaw plugins install clawhub:rizamo-mcp` adds the server; the user signs in under Settings, MCP.
 - **REST API:** `https://api.rizamo.com/v1` with `Authorization: Bearer $RIZAMO_API_KEY`. The user creates the key in Rizamo under Developers (it starts with `rz_live_`). Reference: https://docs.rizamo.com/api
 
 The user needs a Rizamo account (free for two social accounts) with at least one account connected.
@@ -65,6 +65,14 @@ The user needs a Rizamo account (free for two social accounts) with at least one
 2. `GET /inbox/threads/<id>` reads one with its messages.
 3. After the user approves the text: `POST /inbox/threads/<id>/messages` with `{ "text": "..." }`.
 4. `PATCH /inbox/threads/<id>` with `{ "status": "done" }` closes it.
+
+## Regular reports and checks
+
+When the user asks for something on a schedule ("every Monday, send me last week's results", "every morning, tell me what needs a reply"), set it up with your own scheduler, such as OpenClaw's automations; Rizamo sends no reports itself. On each run:
+
+- Results: `GET /analytics/overview?days=7` (`get_analytics`): views against the week before, then the top three posts and anything that dropped.
+- Inbox: `GET /inbox/threads?status=open` (`list_threads`): how many threads are open and which wait longest. Draft replies, but send none without the user's yes.
+- Keep it to a few lines, and send it where the user asked (the chat, WhatsApp, Telegram).
 
 ## Short links
 

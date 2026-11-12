@@ -93,6 +93,14 @@ Add Rizamo to Cline's MCP settings, then choose Authorize OAuth for it and sign 
 
 With the Cline CLI: `cline mcp add rizamo https://mcp.rizamo.com/mcp --transport http`.
 
+### OpenClaw
+
+```sh
+openclaw plugins install clawhub:rizamo-mcp
+```
+
+Start a new session, then open Settings, then MCP, and choose Sign in for Rizamo. The plugin adds the server and the Rizamo skill.
+
 ### Any other client
 
 Paste the server URL into any client that supports remote MCP servers with OAuth. To skip the sign-in, create an API key in Rizamo under Developers and send it as a header:
@@ -103,7 +111,7 @@ Authorization: Bearer rz_live_...
 
 ## Agent skill
 
-For agents that load skills (Claude Code, Codex, Cursor, OpenClaw and others), [skills/rizamo](skills/rizamo/SKILL.md) teaches the steps to publish or schedule a post, see how posts did and answer comments, through this server or the REST API.
+For agents that load skills (Claude Code, Codex, Cursor, OpenClaw and others), [skills/rizamo](skills/rizamo/SKILL.md) teaches the steps to publish or schedule a post, see how posts did, answer comments and send regular reports, through this server or the REST API. OpenClaw's plugin above includes it.
 
 ```sh
 npx skills add rizamohq/rizamo-mcp
