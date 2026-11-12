@@ -1,7 +1,7 @@
 {
   "id": "rizamo",
   "name": "Rizamo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Publish and schedule posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages.",
   "categories": [
     "sales-marketing"
@@ -13,11 +13,6 @@
   },
   "skills": [
     "skills/rizamo"
-  ],
-  "recommendedPrompts": [
-    "What is scheduled on my social accounts this week?",
-    "How did my posts do this month compared with last month?",
-    "Show me the open comments and messages that need a reply."
   ],
   "mcpServers": {
     "rizamo": {
