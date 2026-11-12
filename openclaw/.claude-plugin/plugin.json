@@ -1,0 +1,13 @@
+{
+  "name": "rizamo",
+  "version": "1.0.0",
+  "description": "Publish and schedule posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages.",
+  "author": {
+    "name": "Rizamo",
+    "email": "hi@rizamo.com"
+  },
+  "homepage": "https://docs.rizamo.com/connect-an-agent",
+  "repository": "https://github.com/rizamohq/rizamo-mcp",
+  "license": "MIT",
+  "mcpServers": "./.mcp.json"
+}
