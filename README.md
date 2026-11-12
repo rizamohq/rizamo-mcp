@@ -101,6 +101,14 @@ Paste the server URL into any client that supports remote MCP servers with OAuth
 Authorization: Bearer rz_live_...
 ```
 
+## Agent skill
+
+For agents that load skills (Claude Code, Codex, Cursor, OpenClaw and others), [skills/rizamo](skills/rizamo/SKILL.md) teaches the steps to publish or schedule a post, see how posts did and answer comments, through this server or the REST API.
+
+```sh
+npx skills add rizamohq/rizamo-mcp
+```
+
 ## What your agent can do
 
 - Publish now or schedule reels, carousels, stories, videos and feed posts, with each network's media and text rules checked before a post goes out.
