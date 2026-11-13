@@ -10,6 +10,9 @@
   },
   "homepage": "https://rizamo.com/agents/",
   "privacyPolicyUrl": "https://rizamo.com/legal/privacy/",
+  "termsOfServiceUrl": "https://rizamo.com/legal/terms/",
+  "documentationUrl": "https://docs.rizamo.com/connect-an-agent",
+  "supportUrl": "mailto:hi@rizamo.com",
   "repository": "https://github.com/rizamohq/rizamo-mcp",
   "license": "MIT",
   "keywords": [
