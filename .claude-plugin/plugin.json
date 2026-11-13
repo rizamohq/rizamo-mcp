@@ -1,0 +1,24 @@
+{
+  "name": "rizamo",
+  "displayName": "Rizamo",
+  "description": "Publish and schedule social posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rizamo",
+    "email": "hi@rizamo.com",
+    "url": "https://rizamo.com"
+  },
+  "homepage": "https://rizamo.com/agents/",
+  "privacyPolicyUrl": "https://rizamo.com/legal/privacy/",
+  "repository": "https://github.com/rizamohq/rizamo-mcp",
+  "license": "MIT",
+  "keywords": [
+    "social-media",
+    "marketing",
+    "scheduling",
+    "analytics",
+    "instagram",
+    "tiktok"
+  ],
+  "mcpServers": "./.mcp.json"
+}
