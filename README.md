@@ -69,6 +69,45 @@ Codex opens the sign-in for you.
 2. Paste the server URL, name it rizamo, then choose Global and Copilot Global.
 3. Sign in to Rizamo when VS Code asks and choose the profiles Copilot can use.
 
+### Kiro
+
+[![Add to Kiro](https://kiro.dev/images/add-to-kiro.svg)](https://kiro.dev/launch/mcp/add?name=rizamo&config=%7B%22url%22%3A%22https%3A%2F%2Fmcp.rizamo.com%2Fmcp%22%2C%22oauthScopes%22%3A%5B%22accounts%3Aread%22%2C%22accounts%3Awrite%22%2C%22fields%3Aread%22%2C%22fields%3Awrite%22%2C%22posts%3Aread%22%2C%22posts%3Awrite%22%2C%22media%3Aread%22%2C%22media%3Awrite%22%2C%22inbox%3Aread%22%2C%22inbox%3Awrite%22%2C%22links%3Aread%22%2C%22links%3Awrite%22%2C%22analytics%3Aread%22%2C%22automations%3Aread%22%2C%22automations%3Awrite%22%2C%22events%3Aread%22%2C%22webhooks%3Aread%22%2C%22webhooks%3Awrite%22%2C%22offline_access%22%5D%7D)
+
+Or add it to `.kiro/settings/mcp.json` in a workspace, or `~/.kiro/settings/mcp.json` for all of them, then sign in to Rizamo when Kiro opens the browser:
+
+```json
+{
+  "mcpServers": {
+    "rizamo": {
+      "url": "https://mcp.rizamo.com/mcp",
+      "oauthScopes": [
+        "accounts:read",
+        "accounts:write",
+        "fields:read",
+        "fields:write",
+        "posts:read",
+        "posts:write",
+        "media:read",
+        "media:write",
+        "inbox:read",
+        "inbox:write",
+        "links:read",
+        "links:write",
+        "analytics:read",
+        "automations:read",
+        "automations:write",
+        "events:read",
+        "webhooks:read",
+        "webhooks:write",
+        "offline_access"
+      ]
+    }
+  }
+}
+```
+
+Keep `oauthScopes`: without it, Kiro asks only for sign-in scopes and the agent sees no tools.
+
 ### Gemini CLI
 
 ```sh
