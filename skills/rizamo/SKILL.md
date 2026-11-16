@@ -1,6 +1,6 @@
 ---
 name: rizamo
-description: Publish and schedule social media posts on Instagram, Facebook, TikTok, YouTube and Threads with Rizamo, see how they did, and answer comments and messages. Use when the user wants to post or schedule social content, check post or account analytics, or reply to their audience.
+description: Publish and schedule social media posts on Instagram, TikTok, LinkedIn, Facebook, YouTube and Threads with Rizamo, see how they did, and answer comments and messages. Use when the user wants to post or schedule social content, check post or account analytics, or reply to their audience.
 metadata:
   openclaw:
     envVars:
