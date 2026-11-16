@@ -1,6 +1,6 @@
 # Rizamo for OpenClaw
 
-Publish and schedule posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages, from OpenClaw.
+Publish and schedule social media posts on Instagram, TikTok, LinkedIn, Facebook, YouTube and Threads, see how they did, and answer comments and messages, from OpenClaw.
 
 This plugin adds Rizamo's remote MCP server (`https://mcp.rizamo.com/mcp`) and the Rizamo skill. Rizamo hosts the server: the plugin holds no code and no keys.
 
@@ -17,6 +17,7 @@ You need a Rizamo account, free for two social accounts, with at least one accou
 ## Ideas
 
 - "Schedule this photo to Instagram and Facebook for Friday at 9."
+- "Post this PDF to our LinkedIn Page as a carousel tomorrow morning."
 - "Every Monday at 9, send me last week's results here."
 - "Every morning, tell me which comments and messages need a reply."
 
