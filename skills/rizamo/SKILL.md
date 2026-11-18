@@ -17,7 +17,7 @@ Rizamo publishes to a team's social accounts, grouped in profiles (one per brand
 - **MCP (preferred when your client supports remote MCP servers):** `https://mcp.rizamo.com/mcp`, streamable HTTP. The user signs in with OAuth and chooses the profiles you can reach. Its tools follow the steps below by name (`list_accounts`, `create_media`, `validate_post`, `create_post`, `publish_post`, `get_post`, `get_analytics`, `list_threads`, `reply_to_thread`). In OpenClaw, `openclaw plugins install clawhub:rizamo-mcp` adds the server; the user signs in under Settings, MCP.
 - **REST API:** `https://api.rizamo.com/v1` with `Authorization: Bearer $RIZAMO_API_KEY`. The user creates the key in Rizamo under Developers (it starts with `rz_live_`). Reference: https://docs.rizamo.com/api
 
-The user needs a Rizamo account (free for two social accounts) with at least one account connected.
+The user needs a Rizamo account with at least one account connected. Free for 2 social accounts, with unlimited posts, profiles, seats and agents, and the API and MCP included. No card.
 
 ## Rules
 
