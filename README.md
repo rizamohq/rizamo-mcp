@@ -2,7 +2,7 @@
 
 # Rizamo MCP server
 
-Publish, schedule and analyze social posts on Instagram, Facebook, TikTok, YouTube and more from your AI agent, and answer comments and messages.
+Publish, schedule and analyze social posts on Instagram, Facebook, TikTok, Threads, LinkedIn and YouTube from your AI agent, and answer comments and messages.
 
 ```text
 https://mcp.rizamo.com/mcp
@@ -22,7 +22,7 @@ Rizamo is in Claude's connectors directory. [Add to Claude](https://claude.ai/di
 2. Sign in to Rizamo and choose the profiles Claude can use.
 3. In any chat, turn it on from + then Connectors.
 
-Or add it as a custom connector: in Connectors, choose Add custom connector, name it Rizamo and paste the server URL.
+If the directory does not show Rizamo, add it as a custom connector instead: in Connectors, choose Add custom connector, name it Rizamo and paste the server URL.
 
 ### ChatGPT
 

@@ -19,4 +19,4 @@ Rizamo is a hosted remote MCP server. There is nothing to clone, build or run.
 3. Call `list_accounts` and tell the user which social accounts you can use. If the tools are missing, stop and tell the user.
 4. Before publishing anything, create posts as drafts and get the user's confirmation.
 
-The user needs a Rizamo account (rizamo.com) with at least one social account connected.
+The user needs a Rizamo account (rizamo.com). If `list_accounts` shows none, `get_connect_link` gives a link the user opens to log in on the network and pick accounts; on a paid plan a new account is charged at once, so tell them what one more costs first (`get_billing`).
