@@ -12,7 +12,7 @@ openclaw plugins install clawhub:rizamo-mcp
 
 Start a new session, then open Settings, then MCP, and choose Sign in for Rizamo. Sign in to Rizamo in the browser and choose the profiles OpenClaw can use.
 
-You need a Rizamo account, free for two social accounts, with at least one account connected in Rizamo's web app.
+You need a Rizamo account with at least one account connected in Rizamo's web app. Free for 2 social accounts, with unlimited posts, profiles, seats and agents, and the API and MCP included. No card.
 
 ## Ideas
 

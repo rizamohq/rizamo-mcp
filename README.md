@@ -10,6 +10,8 @@ https://mcp.rizamo.com/mcp
 
 Remote server, streamable HTTP. Your agent signs in with OAuth: you approve it in the browser and choose the profiles it can reach. An API key works too. Rizamo hosts the server, so there is nothing to install or run: this repository holds the setup for each client and the files directories read.
 
+Free for 2 social accounts, with unlimited posts, profiles, seats and agents, and the API and MCP included. No card. Then [per account](https://rizamo.com/pricing/).
+
 ## Connect
 
 ### Claude
