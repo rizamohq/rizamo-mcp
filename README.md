@@ -38,10 +38,10 @@ Or add it as a custom MCP server, which can also send links to connect accounts:
 ### Claude Code
 
 ```sh
-claude mcp add --transport http rizamo https://mcp.rizamo.com/mcp
+claude mcp add --transport http --scope user rizamo https://mcp.rizamo.com/mcp
 ```
 
-Then run `/mcp` to sign in.
+Then run `/mcp` to sign in. `--scope user` adds Rizamo to every project, not only the folder you run it in.
 
 ### Codex
 
