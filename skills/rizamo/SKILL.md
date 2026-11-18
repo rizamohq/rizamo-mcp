@@ -14,10 +14,12 @@ metadata:
 
 Rizamo publishes to a team's social accounts, grouped in profiles (one per brand or client, each with its own accounts, queue and time zone). Two ways in:
 
-- **MCP (preferred when your client supports remote MCP servers):** `https://mcp.rizamo.com/mcp`, streamable HTTP. The user signs in with OAuth and chooses the profiles you can reach. Its tools follow the steps below by name (`list_accounts`, `create_media`, `validate_post`, `create_post`, `publish_post`, `get_post`, `get_analytics`, `list_threads`, `reply_to_thread`). In OpenClaw, `openclaw plugins install clawhub:rizamo-mcp` adds the server; the user signs in under Settings, MCP.
+- **MCP (preferred when your client supports remote MCP servers):** `https://mcp.rizamo.com/mcp`, streamable HTTP. The user signs in with OAuth and chooses the profiles you can reach. In Claude (claude.ai, Claude Desktop and the mobile apps), the user adds Rizamo from Claude's directory, https://claude.ai/directory/rizamo; the server URL as a custom connector is only for when the directory does not show Rizamo. Its tools follow the steps below by name (`list_accounts`, `create_media`, `validate_post`, `create_post`, `publish_post`, `get_post`, `get_analytics`, `list_threads`, `reply_to_thread`). In OpenClaw, `openclaw plugins install clawhub:rizamo-mcp` adds the server; the user signs in under Settings, MCP.
 - **REST API:** `https://api.rizamo.com/v1` with `Authorization: Bearer $RIZAMO_API_KEY`. The user creates the key in Rizamo under Developers (it starts with `rz_live_`). Reference: https://docs.rizamo.com/api
 
-The user needs a Rizamo account with at least one account connected. Free for 2 social accounts, with unlimited posts, profiles, seats and agents, and the API and MCP included. No card.
+The user needs a Rizamo account. Free for 2 social accounts, with unlimited posts, profiles, seats and agents, and the API and MCP included. No card.
+
+To connect a social account, get a link with `get_connect_link` (`GET /connect/<network>?profileId=<id>`) and give it to the user as it is: they log in on the network and pick the accounts, then `list_accounts` shows them. On a paid plan a new account is charged at once to the card on file, so first tell the user what one more costs (`get_billing`, `GET /billing`: `price.nextAccount`).
 
 ## Rules
 
@@ -26,7 +28,7 @@ The user needs a Rizamo account with at least one account connected. Free for 2 
 - **TikTok has no defaults.** Before each TikTok post, read the account's creator info and ask the user every choice it lists (privacy for photos, comments, Duet, Stitch, promotional content, paid partnership, AI-generated). Set `consent` only after the user agreed to TikTok's Music Usage Confirmation.
 - **Writes are safe to retry.** Send a new `Idempotency-Key` (a UUID) with each write; after a timeout, send the same request with the same key.
 - Times are ISO 8601 in UTC. Queue times are in the profile's time zone.
-- Errors answer `{ "code", "status", "message" }`; the message says what to change.
+- Errors answer `{ "error": { "code", "message" }, "requestId" }` with a matching HTTP status; the message says what to change.
 
 ## Publish or schedule a post
 
