@@ -2,6 +2,8 @@
 
 # Rizamo MCP server
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rizamohq/rizamo-mcp)
+
 Publish, schedule and analyze social posts on Instagram, Facebook, TikTok, Threads, LinkedIn and YouTube from your AI agent, and answer comments and messages.
 
 ```text
@@ -175,7 +177,7 @@ Your agent shows you what it will do and waits for your yes before it publishes,
 
 ## Links
 
-- [Docs](https://docs.rizamo.com/connect-an-agent)
+- [Docs](https://docs.rizamo.com/connect-an-agent), and as text for agents: [llms.txt](https://docs.rizamo.com/llms.txt)
 - [Website](https://rizamo.com/agents/)
 - [Status](https://status.rizamo.com)
 - [Privacy policy](https://rizamo.com/legal/privacy/) and [terms](https://rizamo.com/legal/terms/)
