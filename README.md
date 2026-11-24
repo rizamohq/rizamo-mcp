@@ -2,7 +2,7 @@
 
 # Rizamo MCP server
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rizamohq/rizamo-mcp)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/rizamohq/rizamo-mcp) [![Rizamo MCP connector](https://glama.ai/mcp/connectors/com.rizamo/mcp/badges/score.svg)](https://glama.ai/mcp/connectors/com.rizamo/mcp)
 
 Publish, schedule and analyze social posts on Instagram, Facebook, TikTok, Threads, LinkedIn and YouTube from your AI agent, and answer comments and messages.
 
