@@ -1,8 +1,8 @@
 {
   "name": "rizamo",
   "displayName": "Rizamo",
-  "description": "Publish and schedule social posts on Instagram, Facebook, TikTok, YouTube and Threads, see how they did, and answer comments and messages.",
-  "version": "1.0.0",
+  "description": "Publish and schedule social posts on Instagram, Facebook, TikTok, Threads, LinkedIn, YouTube and Google Business Profile, see how they did, and answer comments and messages.",
+  "version": "1.0.1",
   "author": {
     "name": "Rizamo",
     "email": "hi@rizamo.com",
@@ -12,7 +12,7 @@
   "privacyPolicyUrl": "https://rizamo.com/legal/privacy/",
   "termsOfServiceUrl": "https://rizamo.com/legal/terms/",
   "documentationUrl": "https://docs.rizamo.com/connect-an-agent",
-  "supportUrl": "mailto:hi@rizamo.com",
+  "supportUrl": "https://docs.rizamo.com/conventions#status-and-support",
   "repository": "https://github.com/rizamohq/rizamo-mcp",
   "license": "MIT",
   "keywords": [
